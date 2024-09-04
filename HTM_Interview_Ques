@@ -1,18 +1,213 @@
 
 Level 1 : HTML : 
-1.What are the new features in HTML5? Like : <article>, <section>, <canvas> ,etc .
+1.What are the new features in HTML5? Like : <article>, <section>, <canvas> ,etc.
+
+
 2.What is the difference between a block-level and an inline element?
+
+Ans:- Block-level elements: Start on a new line, take up the full width available, and can contain other block-level and inline elements.
+Inline elements: Do not start on a new line, only take up as much width as necessary, and are typically used within block-level 
+elements to style or format portions of content.
+
 3.What is the purpose of the <!DOCTYPE> declaration?
+
+Ans:- All HTML documents must start with a <!DOCTYPE> declaration.
+The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+In HTML 5, the declaration is simple:
+<!DOCTYPE html>
+
 4.What is the difference between <div> and <span>?
+
+Ans:- The <div> and <span> elements in HTML are both used for grouping and styling content, but they
+serve different purposes and have distinct characteristics. Here’s a detailed comparison:
+
+<div> Element
+1.Block-Level Element:
+*The <div> element is a block-level element. This means it starts on a new line and takes up 
+the full width available, pushing subsequent content to the next line.
+*It is often used to create sections or containers in a webpage layout.
+2.Use Case:
+*The <div> element is used for grouping larger sections of content and structuring the layout of 
+a webpage. For example, it can be used to create distinct sections like headers, footers, sidebars, or main content areas.
+*It’s ideal for organizing and styling blocks of content.
+
+<span> Element
+1.Inline Element:
+*The <span> element is an inline element. It does not start on a new line and only takes up as much width
+as necessary to fit its content.
+*It is used to apply styles or scripts to a small portion of text or other inline content.
+
+2.Use Case:
+*The <span> element is used for styling or applying scripts to a part of a text or other
+inline elements without disrupting the flow of content. For instance, you might use <span> to
+style a single word or phrase within a paragraph.
+*It’s ideal for targeting and manipulating small parts of a document.
+
+
 5.How do you create a hyperlink in HTML?
+
+Ans:- To create a hyperlink in HTML, you use the <a> (anchor) element.
+The <a> element can link to a different webpage
+
+*Basic Syntax
+The basic syntax for creating a hyperlink is:
+<a href="URL">Link Text</a>
+1.href: The attribute that specifies the destination URL or path for the link.
+2.Link Text: The clickable text that users will see.
+
 6.What is the difference between the <link> and <a> tags?
+
+Ans:- 1.<a> Tag:
+
+*Used to create a clickable link on the webpage.
+*Takes you to another page or a specific place on the same page.
+
+2.<link> Tag:
+
+*Used to link to external files, like stylesheets or icons, that your webpage needs.
+*Usually found in the <head> section of the HTML document.
+
+<a> = Clickable link for users.
+<link> = Links to resources like styles or icons, not visible to users.
+
 7.What are the differences between id and class attributes in HTML?
+
+Ans:- 1.id Attribute:
+Unique Identifier: The id attribute is used to assign a unique identifier to a single HTML element.
+Single Use: Each id value should be unique on a webpage, meaning you can't use the same id for multiple elements.
+
+2.class Attribute:
+Reusable Identifier: The class attribute is used to assign one or more class names to an HTML element.
+Multiple Elements: You can use the same class name for multiple elements on the same page.
+
+
 8.What are forms in HTML and how are they used?
+
+Ans:- *What Are Forms in HTML?
+Forms in HTML are used to collect information from users, like their name, email, or comments.
+This information can then be sent to a server to be processed (for example, when you fill out a contact form or sign up for a newsletter).
+
+*How Are Forms Used?
+<form> Tag:
+This is the container for your form.
+It tells the browser where to send the form data (using the action attribute) and how to send it (using the method attribute).
+      Example:
+           <form action="/submit" method="POST">
+                 <!-- Other form elements go here -->
+          </form>
+*Form Elements:
+*Text Input: A box where users can type text.
+      <input type="text" name="username" placeholder="Enter your name">
+
+*Radio Buttons/Checkboxes: Allow users to select options.
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+
+*Submit Button: A button that sends the form data when clicked.
+    <button type="submit">Submit</button>
+
+*Form Submission:
+1.When the user fills out the form and clicks "Submit," the data is sent to the server.
+2.The method attribute determines how the data is sent:
+    GET: Data is added to the URL.
+    POST: Data is sent securely in the background.
+
+**Example of a Simple Form:
+<form action="/submit" method="POST">
+    Name: <input type="text" name="name"><br>
+    Email: <input type="email" name="email"><br>
+    <button type="submit">Submit</button>
+</form>
+
+***Easy Summary:
+Forms are used to collect user information.
+<form> tag holds everything together.
+Inputs are where users enter data.
+Submit button sends the data to the server.
+
+
 9.How do you make an HTML page mobile-friendly?
+
+
+
+
+
 10. What are the differences between HTML and XHTML?
+
+Ans:-HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) are both 
+languages used for creating webpages, but they have some key differences. Here’s a breakdown:
+
+*Syntax:
+
+HTML: More lenient with syntax (e.g., tags can be left unclosed).
+XHTML: Stricter syntax (e.g., all tags must be closed).
+
+*Case Sensitivity:
+
+HTML: Tags and attributes can be in any case (e.g., <DIV> or <div>).
+XHTML: Tags and attributes must be in lowercase (e.g., <div>).
+Document Structure:
+
+HTML: More flexible with document structure.
+XHTML: Requires a well-formed document with proper nesting and structure.
+
+*MIME Type:
+
+HTML: Typically served with text/html.
+XHTML: Should be served with application/xhtml+xml.
+
+*Error Handling:
+
+HTML: Browsers can render pages even with errors.
+XHTML: Browsers may refuse to render pages with errors.
+
+*Compatibility:
+
+HTML: Not XML-compliant.
+XHTML: Fully XML-compliant, making it more suitable for XML integration.
+
 11.What is the purpose of the <meta> tag in HTML?
+
+Ans:- The <meta> tag in HTML provides metadata about the webpage, which is information
+that is not displayed directly on the page but is used by browsers, search engines, 
+and other web services. The <meta> tag is placed within the <head> section of an HTML document.
+
 12.What is the use of the alt attribute in <img> tags?
+
+Ans:- The alt attribute provides a text description of an image.
+It helps with accessibility for users with visual impairments, shows text if the
+image doesn’t load, and improves search engine understanding of the image content.
+
+Example:-<img src="logo.png" alt="Company Logo">
+
 13.How do you create a table in HTML?
+
+Ans:- Basic Structure of an HTML Table:
+<table>: The container for the entire table.
+<tr> (Table Row): Defines a row in the table.
+<th> (Table Header): Defines a header cell in the table (usually bold and centered).
+<td> (Table Data): Defines a standard cell in the table.
+
+Example:-
+
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+        <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+    </tr>
+</table>
+
 
 
 Level 2 : CSS : 
