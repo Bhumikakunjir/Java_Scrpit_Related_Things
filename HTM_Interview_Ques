@@ -2,10 +2,58 @@
 Level 1 : HTML : 
 1.What are the new features in HTML5? Like : <article>, <section>, <canvas> ,etc .
 2.What is the difference between a block-level and an inline element?
+
+Ans:- Block-Level Element: Starts on a new line and takes up the full width available.
+           Examples: <div>, <p>, <h1>, <ul>, <ol>, <li>, <header>, <footer>, <section>
+
+Usage: Block-level elements are typically used for larger structures of a webpage, like sections of 
+content, headers, paragraphs, and lists.
+
+Inline Element: Does not start on a new line and only takes up as much width as its content. 
+           Examples: <span>, <a>, <strong>, <em>, <img>, <b>, <i>
+
+Usage: Inline elements are used to format parts of content within block-level elements,
+such as applying styles to specific text within a paragraph or linking text.
+
 3.What is the purpose of the <!DOCTYPE> declaration?
+
+Ans:- All HTML documents must start with a <!DOCTYPE> declaration.
+The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+
 4.What is the difference between <div> and <span>?
+
+Ans:- The <div> and <span> elements in HTML serve different purposes and have distinct characteristics:
+1.<div>
+Type: Block-level element
+Display: Takes up the full width of its container and starts on a new line.
+Usage: Used for grouping and organizing larger sections of content, such as layout sections, containers, and groups of elements.
+Exmaple:- <div>
+  <h1>Welcome</h1>
+  <p>This is a paragraph inside a div.</p>
+</div>
+2.<span>
+Type: Inline element
+Display: Only takes up as much width as its content and does not start on a new line.
+Usage: Used for styling or applying attributes to a small portion of text or a small element within a block-level element.
+
+Example:- <p>This is a <span style="color: red;">highlighted</span> word in a paragraph.</p>
+
 5.How do you create a hyperlink in HTML?
+
+Ans:- To create a hyperlink in HTML, you use the <a> (anchor) tag. 
+            <a href="URL">Link Text</a>
+*href: This attribute specifies the URL or the destination of the hyperlink.
+*Link Text: This is the text that will be clickable in the browser.
+
+*****Summary
+1.Use the <a> tag with the href attribute to create hyperlinks.
+2.Add target="_blank" to open links in a new tab.
+3.Use mailto: for email links.
+4.Use # followed by an id to link to specific sections on the same page.
+
 6.What is the difference between the <link> and <a> tags?
+
+Ans:-  
 7.What are the differences between id and class attributes in HTML?
 8.What are forms in HTML and how are they used?
 9.How do you make an HTML page mobile-friendly?
